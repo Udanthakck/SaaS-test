@@ -1,0 +1,34 @@
+{
+    "loginPage": {
+      "titles": {
+        "loginAdmin": "계정에 로그인하세요",
+        "loginSuperAdmin": "DEX.ID 슈퍼 관리자 로그인",
+        "loginSubText": "다시 오신 것을 환영합니다! 로그인 정보를 입력하세요",
+        "email": "이메일",
+        "password": "비밀번호",
+        "inputFieldText": "입력하세요 ",
+        "rememberMe": "로그인 상태 유지",
+        "forgot": "비밀번호를 잊으셨나요?",
+        "login": "로그인",
+        "noAccount": "계정이 없으신가요?",
+        "signUp": "회원가입"
+      },
+      "validations": {
+        "emailErr1": "유효한 이메일 주소를 입력하세요",
+        "emailErr2": "해당 이메일 주소로 된 계정을 찾을 수 없습니다",
+        "passwordErr": "비밀번호를 입력하세요"
+      }
+    },
+    "OTPPage": {
+      "titles": {
+        "reset": "비밀번호 재설정",
+        "resetSubText": "아래에 전송된 6자리 비밀번호 재설정 코드를 입력하세요: ",
+        "notRecieve": "코드를 받지 못하셨나요? ",
+        "resend": "재전송"
+      },
+      "validations": {
+        "resetErr": "입력한 OTP가 올바르지 않습니다. 이메일로 전송된 OTP를 다시 입력하세요."
+      }
+    }
+  }
+  

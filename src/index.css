@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(./fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format('ttf');
+      }
+    @font-face {
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(./fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf) format('ttf');
+      }
+    h1 {
+      @apply font-sans font-semibold text-6xl
+    }
+    h2 {
+      @apply font-sans font-semibold text-3xl
+    }
+    [type='checkbox']:checked {
+      background-image: url('data:image/svg+xml, %3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22white%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22 class=%22feather feather-check%22%3E%3Cpolyline points=%2220 6 9 17 4 12%22%3E%3C/polyline%3E%3C/svg%3E');
+    }
+    /* For Chrome, Safari, Edge, and Opera */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* For Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+}
+
+@layer components {
+  .sub-heading {
+    @apply font-sans font-light text-base
+  }
+  .form-label {
+    @apply font-sans font-normal text-sm
+  }
+  .input-placeholder {
+    @apply font-sans font-light text-base text-input-txt-def hover:text-txt-def
+  }
+  .input-field {
+    @apply border border-btn-border rounded-lg px-3.5 py-2.5 placeholder:input-placeholder hover:border-btn-def focus:border-btn-def focus:outline-none invalid:outline-none invalid:border-input-err focus:invalid:border-txt-err hover:invalid:border-txt-err
+  }
+  .input-err {
+    @apply font-sans font-light text-sm text-txt-err
+  }
+  .submit-btn {
+    @apply capitalize font-sans rounded-lg text-center bg-btn-def hover:bg-btn-hover text-white px-3.5 py-2.5 font-semibold text-base focus:outline-none
+  }
+  .input-icon {
+    @apply absolute right-3 top-9 flex items-center cursor-pointer text-input-icon-def size-4 peer-hover:text-txt-def peer-invalid:text-input-err peer-invalid:peer-hover:text-txt-err peer-invalid:peer-focus:text-txt-err
+  }
+  .chkbox {
+    @apply appearance-none rounded size-4 border border-btn-border hover:border-input-icon-def checked:bg-btn-def checked:border-btn-def checked:hover:bg-btn-hover checked:hover:border-btn-hover
+  }
+  .hlink-txt {
+    @apply font-sans font-medium text-sm text-btn-def active:text-btn-hover hover:underline hover:underline-offset-1
+  }
+}
+
+/* .langbtn:hover {
+  transform:scaleY(2.5)
+} */
+/* .btn-opened {
+  transform:scaleY(1);
+}
+.btn-closed {
+  transform: scaleY(0);
+  overflow:hidden;
+} */

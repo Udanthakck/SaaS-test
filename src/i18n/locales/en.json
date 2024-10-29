@@ -1,0 +1,56 @@
+{
+    "loginPage": {
+        "titles": {
+            "loginAdmin": "Login to your account",
+            "loginSuperAdmin": "DEX.ID Super Admin Login",
+            "loginSubText": "Welcome back! Please enter your login details",
+            "email": "email",
+            "password": "password",
+            "inputFieldText": "Enter your ",
+            "rememberMe": "Remember me",
+            "forgot": "Forgot",
+            "login": "Log in",
+            "noAccount": "Don't have an account?", 
+            "signUp": "Sign up"
+        },
+        "validations": {
+            "emailErr1": "Please enter a valid email address",
+            "emailErr2": "We couldn't find an account with that email address",
+            "passwordErr": "Please enter your password"
+        }
+    },
+    "OTPPage": {
+        "titles": {
+            "reset": "reset",
+            "resetSubText": "Please enter the 6-digit password reset code below that was sent to ",
+            "notRecieve": "Didn't receive the reset code? ",
+            "resend": "Resend",
+            "verification": "verification"
+        },
+        "validations": {
+            "resetErr": "The OTP you entered is incorrect. Please re-enter the OTP sent to your email."
+        }
+    },
+    "signupPage": {
+        "titles": {
+            "signupSubText": "Create your company account",
+            "company": "company",
+            "name": "name",
+            "enter": "enter",
+            "businessReg": "business registration",
+            "brNumber": "BR Number",
+            "logo": "logo",
+            "confirm": "confirm",
+            "createAcc": "create account"
+        },
+        "validations": {
+            "emptyErr": "This field cannot be empty",
+            "nameLengthErr": "Company name must contain at least 3 characters",
+            "brErr": "Please enter a valid BR number",
+            "passwordLengthErr": "Password must be 8-16 characters and contain both numbers and letters/special characters",
+            "passwordNotMatchErr": "Password and confirm password does not match"
+        }
+    }
+
+}
+  
